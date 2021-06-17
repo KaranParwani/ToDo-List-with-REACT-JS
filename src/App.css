@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text_sec {
+    position: absolute;
+    top: 8%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_div {
+    background-image: url("image.png");
+    /* background: #6983aa; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Jost", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+    background: #eee;
 }
 
-.App-link {
-  color: #61dafb;
+.center_div {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 15px;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #f4f4f4;
+    position: absolute;
+    /* right: 20%; */
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+    margin-left: 50px;
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    font-weight: 700;
+    width: 60%;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+}
+
+.button {
+    /* min-height: px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: purple;
+    color: white;
+    font-size: 35px;
+    /* text-align: center; */
+    border: none;
+    outline: none;
+    margin-left: 5%;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #20bf6b;
 }
