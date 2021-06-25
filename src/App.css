@@ -1,74 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Jost", sans-serif;
-}
-
-.text_sec {
-    position: absolute;
-    top: 8%;
-}
-
-.main_div {
-    background-image: url("image.png");
-    /* background: #6983aa; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    width: 100vw;
-    font-family: "Jost", sans-serif;
-}
-
-html {
-    background: #eee;
-}
-
-.center_div {
-    width: 25vw;
-    height: 60vh;
-    border-radius: 15px;
-    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
-    background: #f4f4f4;
-    position: absolute;
-    /* right: 20%; */
-    transform: translate3d(0, 0, 0);
-    min-width: 20rem;
-    min-height: 35rem;
-}
-
-.input {
-    margin-left: 50px;
-    text-align: center;
-    height: 30px;
-    top: 10px;
-    border: none;
-    background: transparent;
-    font-size: 25px;
-    font-weight: 700;
-    width: 60%;
-    border-bottom: 2px solid blueviolet;
-    outline: none;
-}
-
-.button {
-    /* min-height: px; */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: purple;
-    color: white;
-    font-size: 35px;
-    /* text-align: center; */
-    border: none;
-    outline: none;
-    margin-left: 5%;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-}
-
-.button:hover {
-    background-color: #20bf6b;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        color: purple;
+        font-family: "Jost", sans-serif;
+        /* font-size: 25px; */
+    }
+    
+    .text_sec {
+        position: absolute;
+        top: 8%;
+        font-size: 30px;
+        color: black;
+    }
+    
+    .main_div {
+        background-image: url("image.png");
+        background-repeat: no-repeat;
+        background-size: 115%;
+        /* background: #6983aa; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100vw;
+        font-family: "Jost", sans-serif;
+    }
+    
+    html {
+        background: #eee;
+    }
+    
+    .center_div {
+        width: 25vw;
+        height: 60vh;
+        border-radius: 15px;
+        box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+        background: #f4f4f4;
+        position: absolute;
+        /* right: 20%; */
+        transform: translate3d(0, 0, 0);
+        min-width: 35rem;
+        min-height: 35rem;
+    }
+    
+    .input {
+        margin-top: 20px;
+        margin-left: 30px;
+        text-align: center;
+        height: 45px;
+        top: 10px;
+        border: none;
+        background: transparent;
+        font-size: 25px;
+        font-weight: 600;
+        width: 65%;
+        border-bottom: 3px solid purple;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .button {
+        /* min-height: px; */
+        width: 50px;
+        height: 50px;
+        padding: 0.1%;
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: purple;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        /* text-align: center; */
+        border: none;
+        outline: none;
+        margin-left: 5%;
+        box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .button:hover {
+        background-color: #20bf6b;
+    }
+    
+    ol {
+        margin-top: 30px;
+    }
+    
+    ol li {
+        padding: left 20px;
+        text-align: left;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        text-transform: capitalize;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .todo_style {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .todo_style .bi-trash-fill {
+        margin-left: 10px;
+        /* margin-right: 10px; */
+        color: red;
+    }
+    
+   .date {
+        font-size: 65px;
+        position: relative;
+        float: left;
+        /* align-items: right; */
+    }
